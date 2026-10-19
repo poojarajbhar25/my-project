@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI-Powered Content Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI-Powered Content Generator</h1>
+
+        <p class="subtitle">
+            Ask questions, summarize text, generate ideas, or find definitions.
+        </p>
+
+    
+        <textarea
+            id="userInput"
+            placeholder="Ask your question..."
+        ></textarea>
+
+        <button id="actionBtn">
+            Ask Gemini
+        </button>
+
+        
+        <div class="features">
+
+            <button class="feature active" data-feature="ask">
+                Ask Me Anything
+            </button>
+
+            <button class="feature" data-feature="summary">
+                Quick Summarizer
+            </button>
+
+            <button class="feature" data-feature="ideas">
+                Idea Spark
+            </button>
+
+            <button class="feature" data-feature="definition">
+                Definition Finder
+            </button>
+
+        </div>
+
+        <div class="output-section">
+
+            <h2>Output</h2>
+
+            <div id="output">
+                Your answer will appear here...
+            </div>
+
+        </div>
+
+    </div>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
+

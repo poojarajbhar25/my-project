@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+
+    background-image: url("https://media.istockphoto.com/id/2149331782/vector/abstract-technology-background-with-light-effect.jpg?s=612x612&w=0&k=20&c=pS9FsXI1YsoLaS-a9TA8WmtcJ7uKWoacJ95QymWIMEM=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.container {
+    width: 750px;
+    max-width: 100%;
+
+    background-color: rgb(209, 198, 198);
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+h1 {
+    text-align: center;
+
+    color: #222;
+
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+#userInput {
+    width: 100%;
+
+    min-height: 120px;
+
+    padding: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-family: Arial, sans-serif;
+
+    resize: vertical;
+
+    outline: none;
+}
+
+
+#userInput:focus {
+    border-color: #4ea9cd;
+}
+
+
+#actionBtn {
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #222;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+#actionBtn:hover {
+    background-color: #444;
+}
+
+
+#actionBtn:disabled {
+    background-color: #999;
+
+    cursor: not-allowed;
+}
+
+
+
+
+.features {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 20px;
+
+    overflow-x: auto;
+}
+
+
+.feature {
+    padding: 10px 14px;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: #666;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+.feature:hover {
+    color: #000;
+}
+
+
+.feature.active {
+    color: #000;
+
+    font-weight: bold;
+
+    border-bottom: 2px solid #222;
+}
+
+
+.output-section {
+    margin-top: 25px;
+}
+
+
+.output-section h2 {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+#output {
+    width: 100%;
+
+    min-height: 160px;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    background-color: #f7f7f7;
+
+    color: #333;
+
+    line-height: 1.6;
+
+    white-space: pre-wrap;
+
+    overflow-wrap: break-word;
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .features {
+        justify-content: flex-start;
+    }
+
+}
+
